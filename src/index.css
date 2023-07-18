@@ -1,10 +1,100 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
 
 @layer base {
+    *,
+    *:before,
+    *:after {
+        box-sizing: border-box;
+    }
+    * {
+        margin: 0;
+        padding: 0;
+        font: inherit;
+    }
+    img,
+    picture,
+    svg,
+    video {
+        display: block;
+        max-width: 100%;
+    }
+    input,
+    select,
+    textarea {
+        background-color: transparent;
+        outline: none;
+    }
+    button {
+        cursor: pointer;
+        background-color: transparent;
+        outline: none;
+        border: 0;
+    }
     body {
-        max-width: 1200px;
-        
+        min-height: 100vh;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1;
+        font-family: 'Raleway', sans-serif;
+    }
+}
+
+@layer components {
+    .ct-icon {
+        @apply w-4 h-4;
+    }
+    .section-one,
+    .section-three {
+        background: linear-gradient(to top, #52e8a0 0%, #1acce5 100%);
+    }
+    .h1-title {
+        font-size: clamp(2rem, 1.5455rem + 1.9394vw, 3rem);
+    }
+    .h2-title {
+        text-transform: uppercase;
+        font-size: clamp(2rem, 1.5455rem + 1.9394vw, 3rem);
+        line-height: 1.167;
+    }
+    .h4-title {
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 1.25;
+    }
+    .section-two-item {
+        @apply flex mb-[72px] md:mb-[60px];
+    }
+    .item-desc {
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 1.5;
+    }
+    .section-three__card {
+        color: rgba(0, 0, 0, 0.87);
+        transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+        background-color: #fff;
+        border-radius: 4px;
+        /* card-style */
+        width: 100%;
+        display: flex;
+        z-index: 1;
+        max-width: 468px;
+        box-shadow: 0 2px 8px 0 rgba(25, 25, 25, 0.16);
+        padding-top: 32px;
+        padding-left: 32px;
+        margin-bottom: 32px;
+        padding-right: 32px;
+        flex-direction: column;
+        padding-bottom: 32px;
+        @apply lg:p-[56px] lg:mb-0 md:max-w-[468px] md:flex-col;
+    }
+    .ct-line {
+        border: none;
+        height: 1px;
+        margin: 0;
+        flex-shrink: 0;
+        background-color: rgba(0, 0, 0, 0.12);
     }
 }
