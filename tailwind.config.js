@@ -15,6 +15,10 @@ export default {
             },
             backgroundColor: {
                 hr: 'rgba(0, 0, 0, 0.12)'
+            },
+            screens: {
+                sm: '600px',
+                xl: '1264px'
             }
         }
     },

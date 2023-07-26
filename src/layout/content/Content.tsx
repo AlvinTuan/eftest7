@@ -1,4 +1,3 @@
-import { Divider } from 'antd'
 import SectionOne from '../home-section/section-one'
 import SectionTwo from '../home-section/section-two'
 import SectionThree from '../home-section/section-three'

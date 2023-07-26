@@ -1,16 +1,12 @@
 import type { MenuProps } from 'antd'
-import { Button, Dropdown, Space } from 'antd'
-
-const childrenDropdown: React.CSSProperties = {
-    padding: '8px 56px 8px 5px'
-}
+import { Button, Dropdown } from 'antd'
 
 const items: MenuProps['items'] = [
     {
         key: '1',
         label: (
             <a target='_blank' rel='noopener noreferrer' href='https://www.antgroup.com'>
-                Quick Check (15-min)
+                1st menu item
             </a>
         )
     },
@@ -18,7 +14,7 @@ const items: MenuProps['items'] = [
         key: '2',
         label: (
             <a target='_blank' rel='noopener noreferrer' href='https://www.aliyun.com'>
-                <span>EF SET 50 (50-min)</span>
+                2nd menu item
             </a>
         )
     },
@@ -26,7 +22,7 @@ const items: MenuProps['items'] = [
         key: '3',
         label: (
             <a target='_blank' rel='noopener noreferrer' href='https://www.luohanacademy.com'>
-                <span>Assessment Solutions</span>
+                3rd menu item
             </a>
         )
     }
@@ -35,7 +31,7 @@ const items: MenuProps['items'] = [
 const OurTests = () => {
     return (
         <Dropdown menu={{ items }} placement='bottomLeft'>
-            <p className='hover:underline'>Our Tests</p>
+            <Button>bottomLeft</Button>
         </Dropdown>
     )
 }

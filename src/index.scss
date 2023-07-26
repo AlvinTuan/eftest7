@@ -25,6 +25,24 @@
     .ct-icon {
         @apply w-4 h-4;
     }
+    .header {
+        width: 100%;
+        display: flex;
+        box-sizing: border-box;
+        flex-shrink: 0;
+        flex-direction: column;
+        position: static;
+        z-index: 9;
+        color: rgba(0, 0, 0, 0.87);
+        box-shadow:
+            0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+            0px 2px 2px 0px rgba(0, 0, 0, 0.14),
+            0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+        border-bottom: solid 0.5px #979797;
+        background-color: #fff;
+        transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    }
+    // content
     .section-one,
     .section-two,
     .section-three,
