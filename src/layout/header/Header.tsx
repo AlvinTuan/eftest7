@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import OurTests from '~/components/header/OurTests'
+import OurTests from '~/components/header/ourtests'
 
 export default function Header() {
     const [showMenu, setShowMenu] = useState(false)

@@ -1,7 +1,7 @@
 import Content from '~/layout/content'
 import Header from '~/layout/header'
 
-const HomePage = () => {
+export default function HomePage() {
     return (
         <>
             <Header></Header>
@@ -10,4 +10,3 @@ const HomePage = () => {
     )
 }
 
-export default HomePage

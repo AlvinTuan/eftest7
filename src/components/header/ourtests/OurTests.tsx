@@ -28,12 +28,10 @@ const items: MenuProps['items'] = [
     }
 ]
 
-const OurTests = () => {
+export default function OurTests() {
     return (
         <Dropdown menu={{ items }} placement='bottomLeft'>
             <Button>bottomLeft</Button>
         </Dropdown>
     )
 }
-
-export default OurTests
