@@ -26,8 +26,19 @@
         @apply w-4 h-4;
     }
     .section-one,
+    .section-two,
+    .section-three,
+    .section-four,
+    .section-five,
+    .section-six {
+        @apply w-full relative;
+    }
+    .section-one,
     .section-three {
         background: linear-gradient(to top, #52e8a0 0%, #1acce5 100%);
+    }
+    .section-five {
+        background: linear-gradient(-135deg, #fe1c80, #0310ea 100%);
     }
     .h1-title {
         font-size: clamp(2rem, 1.5455rem + 1.9394vw, 3rem);
@@ -93,9 +104,7 @@
     .ct-btnSection {
         @apply px-6 text-white h-14 md:h-12 text-base md:text-sm cursor-pointer font-semibold flex items-center rounded-full shadow-btn;
     }
-    .ct-section5Background {
-        background: linear-gradient(-135deg, #fe1c80, #0310ea 100%);
-    }
+
     .ct-section5__title {
         width: 100%;
         display: inherit;
