@@ -1,37 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
 
 @layer base {
-    *,
-    *:before,
-    *:after {
-        box-sizing: border-box;
-    }
-    * {
-        margin: 0;
-        padding: 0;
-        font: inherit;
-    }
-    img,
-    picture,
-    svg,
-    video {
-        display: block;
-        max-width: 100%;
-    }
-    input,
-    select,
-    textarea {
-        background-color: transparent;
-        outline: none;
-    }
-    button {
+    a {
         cursor: pointer;
-        background-color: transparent;
-        outline: none;
-        border: 0;
+    }
+    p {
+        max-width: 760px;
     }
     body {
         min-height: 100vh;
@@ -96,5 +72,19 @@
         margin: 0;
         flex-shrink: 0;
         background-color: rgba(0, 0, 0, 0.12);
+    }
+    .ct-p {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.5;
+    }
+    .ct-btnColorOdd {
+        background: linear-gradient(rgb(69, 221, 151), rgb(59, 200, 135));
+    }
+    .ct-btnColorEven {
+        background: linear-gradient(rgb(16, 183, 221), rgb(16, 169, 204));
+    }
+    .ct-btnSectionThree {
+        @apply px-6 bg-black text-white h-14 md:h-12 cursor-pointer font-semibold flex items-center rounded-full shadow-btn;
     }
 }

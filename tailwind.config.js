@@ -4,7 +4,8 @@ export default {
     theme: {
         extend: {
             colors: {
-                primary: '#11A7B6'
+                primary: '#11A7B6',
+                focus_hover: '#23527c'
             },
             lineHeight: {
                 desktopTitle1: '56.016px'
