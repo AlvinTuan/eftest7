@@ -12,6 +12,9 @@ export default {
             },
             boxShadow: {
                 btn: '0 2px 8px 0 rgba(25, 25, 25, 0.2);'
+            },
+            backgroundColor: {
+                hr: 'rgba(0, 0, 0, 0.12)'
             }
         }
     },
