@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 @layer base {
+    img {
+        vertical-align: middle;
+    }
     a {
         cursor: pointer;
     }
@@ -84,7 +87,7 @@
     .ct-btnColorEven {
         background: linear-gradient(rgb(16, 183, 221), rgb(16, 169, 204));
     }
-    .ct-btnSectionThree {
+    .ct-btnSection {
         @apply px-6 bg-black text-white h-14 md:h-12 cursor-pointer font-semibold flex items-center rounded-full shadow-btn;
     }
 }
