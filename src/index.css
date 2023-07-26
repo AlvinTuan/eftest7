@@ -88,6 +88,31 @@
         background: linear-gradient(rgb(16, 183, 221), rgb(16, 169, 204));
     }
     .ct-btnSection {
-        @apply px-6 bg-black text-white h-14 md:h-12 cursor-pointer font-semibold flex items-center rounded-full shadow-btn;
+        @apply px-6 text-white h-14 md:h-12 text-base md:text-sm cursor-pointer font-semibold flex items-center rounded-full shadow-btn;
+    }
+    .ct-section5Background {
+        background: linear-gradient(-135deg, #fe1c80, #0310ea 100%);
+    }
+    .ct-section5__title {
+        width: 100%;
+        display: inherit;
+        align-items: inherit;
+        justify-content: inherit;
+    }
+    .touch-ripple-root {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 0;
+        overflow: hidden;
+        position: absolute;
+        border-radius: inherit;
+        pointer-events: none;
+    }
+    .ct-sec5Btn {
+        color: #fff;
+        border: solid 1px rgba(255, 255, 255, 0.4);
+        @apply mx-auto py-0 px-6 mb-8 md:ml-auto lg:ml-0;
     }
 }
