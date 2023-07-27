@@ -48,7 +48,8 @@
     .section-three,
     .section-four,
     .section-five,
-    .section-six {
+    .section-six,
+    .reason-section {
         @apply w-full relative;
     }
     .section-one,
@@ -173,5 +174,53 @@
     }
     .divider-root {
         @apply border-none h-px m-0 shrink bg-hr;
+    }
+    // quick check
+    .test-section {
+        background: linear-gradient(
+            to top,
+            rgba(255, 255, 255, 0),
+            rgba(128, 255, 190, 0.4) 17%,
+            rgb(18, 225, 166) 82%
+        );
+    }
+    .btn-start15 {
+        min-width: 64px;
+
+        font-weight: 500;
+        line-height: 1.75;
+        border: none;
+        height: 56px;
+        display: flex;
+        font-size: 16px;
+        box-shadow: 0 2px 8px 0 rgba(25, 25, 25, 0.2);
+        margin-top: auto;
+        text-align: center;
+        border-radius: 9999px;
+        text-transform: none;
+        justify-content: center;
+        color: #fff;
+        width: 100%;
+        max-width: 270px;
+        align-self: center;
+        background: linear-gradient(rgb(69, 221, 151), rgb(59, 200, 135));
+        transition:
+            background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+            box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+            border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    }
+    @media screen and (min-width: 768px) {
+        .btn-start15 {
+            height: 48px;
+            font-size: 14px;
+            width: auto;
+            padding: 0 24px;
+            margin-right: auto;
+        }
+    }
+    @media screen and (min-width: 1024px) {
+        .btn-start15 {
+            width: auto;
+        }
     }
 }

@@ -5,6 +5,7 @@ export default {
         extend: {
             colors: {
                 primary: '#11A7B6',
+                secondary: '#45dd97',
                 focus_hover: '#23527c'
             },
             lineHeight: {

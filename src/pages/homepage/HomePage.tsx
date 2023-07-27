@@ -1,4 +1,4 @@
-import Content from '~/layout/content'
+import Content from '~/layout/content/content-homepage'
 import Header from '~/layout/header'
 
 export default function HomePage() {
@@ -9,4 +9,3 @@ export default function HomePage() {
         </>
     )
 }
-
