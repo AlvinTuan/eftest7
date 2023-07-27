@@ -1,4 +1,4 @@
-import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function TestSection() {
     return (
@@ -60,17 +60,17 @@ export default function TestSection() {
                                             skills (English grammar and vocabulary) and listening skills.
                                         </p>
                                         <ul className='text-base list-disc ml-3'>
-                                            <li className='text-sm text-base'>
+                                            <li className='text-base'>
                                                 <p className='text-base font-normal'>
                                                     <span>No fees. No sign ups. Start now </span>
                                                 </p>
                                             </li>
-                                            <li className='text-sm text-base'>
+                                            <li className='text-base'>
                                                 <p className='text-base font-normal'>
                                                     <span>Quiz results aligned to CEFR levels </span>
                                                 </p>
                                             </li>
-                                            <li className='text-sm text-base'>
+                                            <li className='text-base'>
                                                 <p className='text-base font-normal'>
                                                     <span>Share your score on social media </span>
                                                 </p>

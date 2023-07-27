@@ -184,9 +184,9 @@
             rgb(18, 225, 166) 82%
         );
     }
-    .btn-start15 {
+    .btn-start15,
+    .btn__start-TakeTest {
         min-width: 64px;
-
         font-weight: 500;
         line-height: 1.75;
         border: none;
@@ -209,17 +209,26 @@
             box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
             border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
     }
+    .btn__start-TakeTest {
+        background: linear-gradient(to bottom, #69aeff, #4999f8);
+    }
     @media screen and (min-width: 768px) {
-        .btn-start15 {
+        .btn-start15,
+        .btn__start-TakeTest {
             height: 48px;
             font-size: 14px;
             width: auto;
             padding: 0 24px;
             margin-right: auto;
         }
+        .btn__start-TakeTest {
+            margin-right: unset;
+            margin-left: auto;
+        }
     }
     @media screen and (min-width: 1024px) {
-        .btn-start15 {
+        .btn-start15,
+        .btn__start-TakeTest {
             width: auto;
         }
     }

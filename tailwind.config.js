@@ -6,6 +6,7 @@ export default {
             colors: {
                 primary: '#11A7B6',
                 secondary: '#45dd97',
+                takeTestColor: '#79B3F8',
                 focus_hover: '#23527c'
             },
             lineHeight: {
@@ -15,7 +16,8 @@ export default {
                 btn: '0 2px 8px 0 rgba(25, 25, 25, 0.2);'
             },
             backgroundColor: {
-                hr: 'rgba(0, 0, 0, 0.12)'
+                hr: '#0000001F',
+                takeTest: '#79B3F8'
             },
             screens: {
                 sm: '600px',

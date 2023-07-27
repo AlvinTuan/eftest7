@@ -1,5 +1,3 @@
-import React from 'react'
-
 export default function ReasonSection() {
     return (
         <div className='reason-section'>
