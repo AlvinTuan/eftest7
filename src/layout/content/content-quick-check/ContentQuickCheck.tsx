@@ -1,6 +1,6 @@
-import SectionFive from '~/components/home-section/section-five/SectionFive'
-import TestSection from '~/components/quick-check'
-import ReasonSection from '~/components/reason-section'
+import SectionFive from '~/layout/home-section/section-five/SectionFive'
+import TestSection from '~/layout/test-section'
+import ReasonSection from '~/layout/reason-section'
 
 export default function ContentQuickCheck() {
     return (

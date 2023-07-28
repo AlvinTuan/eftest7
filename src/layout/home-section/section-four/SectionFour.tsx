@@ -1,3 +1,5 @@
+import Button from "~/components/Button";
+
 export default function SectionFour() {
     return (
         <div className='section-four'>
@@ -21,10 +23,7 @@ export default function SectionFour() {
                             We have helped over 3,000 schools and organizations around the world define proficiency
                             benchmarks using our English level test.
                         </p>
-                        <a className='ct-btnSection ct-btnColorOdd w-[278px]'>
-                            <span className='MuiButton-label'>English assessment solutions</span>
-                            <span className='MuiTouchRipple-root' />
-                        </a>
+                        <Button classBgTextColor="ct-btnColorOdd text-white" label="English assessment solutions"></Button>
                     </div>
                     <div className='hidden lg:flex lg:w-full lg:h-full'>
                         <img

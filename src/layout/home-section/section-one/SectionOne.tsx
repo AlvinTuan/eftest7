@@ -1,3 +1,5 @@
+import Button from "~/components/Button";
+
 export default function SectionOne() {
     return (
         <div className='section-one'>
@@ -11,12 +13,13 @@ export default function SectionOne() {
                             Take the EF Standard English Test and get an accurate assessment of your English level from
                             home
                         </p>
-                        <a
+                        <Button classBgTextColor="bg-white text-primary" label="Test your English now"></Button>
+                        {/* <a
                             href=''
                             className='flex items-center justify-center h-[56px] pt-3 pb-3 pl-6 pr-6 bg-white rounded-full lg:w-[205px] lg:h-12 shadow-btn transition-all'
                         >
                             <span className='font-medium text-primary'>Test your English now</span>
-                        </a>
+                        </a> */}
                     </div>
                     <img src='/desktop-badge.svg' alt='' className='w-[405px] h-[420px]' />
                 </div>

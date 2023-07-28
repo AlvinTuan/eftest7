@@ -1,5 +1,3 @@
-import { Link } from 'react-router-dom'
-
 export default function TestSection() {
     return (
         <div className='w-full flex relative items-center flex-col'>
@@ -31,7 +29,7 @@ export default function TestSection() {
                         className='w-full md:hidden absolute top-1/2 left-0 -translate-y-[40%]'
                     />
                     <div className='w-full flex relative pt-14 px-6 pb-8 flex-col'>
-                        <div className='text-white z-10 max-w-[515px] self-center text-center pb-10 md:px-0 md:pb-[72px]'>
+                        <div className='text-white max-w-[515px] self-center text-center pb-10 md:px-0 md:pb-[72px]'>
                             <h1 className='md:text-5xl font-bold text-3xl'>Our short English quiz</h1>
                         </div>
                         <div className='m-0 flex flex-col justify-center md:flex-row'>

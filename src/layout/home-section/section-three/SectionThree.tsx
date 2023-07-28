@@ -1,3 +1,5 @@
+import Button from "~/components/Button";
+
 export default function SectionThree() {
     return (
         <div className='section-three'>
@@ -81,17 +83,7 @@ export default function SectionThree() {
                                             </p>
                                         </li>
                                     </ul>
-                                    <div className='flex mt-8 items-center flex-col lg:flex-row'>
-                                        <a className='ct-btnSection ct-btnColorOdd' target='_self'>
-                                            <span className='MuiButton-label'>Take the quiz</span>
-                                            <span className='MuiTouchRipple-root' />
-                                        </a>
-                                        {/* <a className="jss452" href="/quick-check/">
-                                    <span className="MuiTypography-root jss453 MuiTypography-body1">Quiz details
-                                        <img src="//a.storyblok.com/f/79503/x/faebe83576/arrow-right-black-16.svg" alt="arrowForward" />
-                                    </span>
-                                </a> */}
-                                    </div>
+                                    <Button classBgTextColor="ct-btnColorOdd text-white" label="Take the quiz"></Button>
                                 </div>
                             </div>
                         </div>
@@ -136,16 +128,7 @@ export default function SectionThree() {
                                             </p>
                                         </li>
                                     </ul>
-                                    <div className='flex mt-8 items-center flex-col lg:flex-row'>
-                                        <a className='ct-btnSection ct-btnColorEven' target='_self'>
-                                            <span>Take the test</span>
-                                        </a>
-                                        {/* <a className="jss452" href="/quick-check/">
-                                    <span className="MuiTypography-root jss453 MuiTypography-body1">Quiz details
-                                        <img src="//a.storyblok.com/f/79503/x/faebe83576/arrow-right-black-16.svg" alt="arrowForward" />
-                                    </span>
-                                </a> */}
-                                    </div>
+                                    <Button classBgTextColor="ct-btnColorEven text-white" label='Take the test'></Button>
                                 </div>
                             </div>
                         </div>

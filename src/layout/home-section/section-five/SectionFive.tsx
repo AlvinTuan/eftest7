@@ -1,3 +1,5 @@
+import Button from "~/components/Button";
+
 export default function SectionFive() {
     return (
         <div className='section-five'>
@@ -11,10 +13,7 @@ export default function SectionFive() {
                             Receive a free personalized online English certificate when you take the 50-minute English
                             test. You can easily add it to your CV or LinkedIn profile.
                         </p>
-                        <a className='ct-btnSection ct-sec5Btn' href='/english-certificate/'>
-                            <span className='ct-section5__title'>Certify your English level</span>
-                            <span className='touch-ripple-root' />
-                        </a>
+                        <Button classBgTextColor="border-solid border-px border-[#ffffff66]" label="Certify your English level"></Button>
                     </div>
                     <div className='w-full h-full flex relative'>
                         <img

@@ -84,7 +84,7 @@ export default function SectionTwo() {
                                     <span>
                                         <b>Created by experts. </b>
                                     </span>
-                                    <span className="text-base">
+                                    <span className='text-base'>
                                         This online English proficiency test was developed over 5 years with leading
                                         scientists in the field of English assessment.
                                     </span>
@@ -109,7 +109,7 @@ export default function SectionTwo() {
                                     <span>
                                         <b>An English level test for everyone. </b>
                                     </span>
-                                    <span className="text-base">
+                                    <span className='text-base'>
                                         EF SET is available on any desktop, tablet, or mobile device. All you need is an
                                         internet connection and less than an hour of your time.
                                     </span>
@@ -129,7 +129,7 @@ export default function SectionTwo() {
                                     <span>
                                         <b>Why pay for accurate results? </b>
                                     </span>
-                                    <span className="text-base">
+                                    <span className='text-base'>
                                         There shouldn't be any barriers to testing your English. English tests are an
                                         important tool for building English proficiency.
                                     </span>
