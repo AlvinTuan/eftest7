@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import Header from '~/layout/header'
 
 export default function TakeTest() {
@@ -65,9 +66,9 @@ export default function TakeTest() {
                     </div>
                     <div className='flex justify-end'>
                         <button className='btn__start-TakeTest' type='button'>
-                            <span className='self-center'>
+                            <Link to='/quick-check/take-test/survey1' className='self-center'>
                                 <span style={{ visibility: 'visible', maxWidth: '100%' }}>Start the test</span>
-                            </span>
+                            </Link>
                         </button>
                     </div>
                 </div>
