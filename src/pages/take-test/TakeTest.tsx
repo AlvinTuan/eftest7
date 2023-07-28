@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom'
-import Header from '~/layout/header'
+import Button from '~/components/Button'
 
 export default function TakeTest() {
     return (
         <div className='w-full'>
             <header className='header fixed top-0 '>
-                <div className='relative min-h-[48px] sm:min-h-[81px] w-full h-full mx-auto flex items-center pl-6 pr-3 flex-row justify-end md:max-w-[960px] md:justify-between lg:py-0 lg:px-[120px] lg:max-w-[1200px]'>
+                <div className='relative min-h-[48px] sm:min-h-[81px] w-full h-full mx-auto flex items-center pl-6 pr-3 md:max-w-[960px] md:justify-between lg:py-0 lg:px-[120px] lg:max-w-[1200px]'>
                     <a>
                         <picture>
                             <img src='/efset-logo_black.svg' alt='logo' />
@@ -65,11 +65,7 @@ export default function TakeTest() {
                         </ul>
                     </div>
                     <div className='flex justify-end'>
-                        <button className='btn__start-TakeTest' type='button'>
-                            <Link to='/quick-check/take-test/survey1' className='self-center'>
-                                <span style={{ visibility: 'visible', maxWidth: '100%' }}>Start the test</span>
-                            </Link>
-                        </button>
+                        <Button toLink='/quick-check/take-test/survey1' classBgTextColor='ct-btnColorEven text-white' label='Start the test'></Button>
                     </div>
                 </div>
             </main>

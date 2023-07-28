@@ -15,7 +15,11 @@ export default function Header() {
                             <img src='/efset-logo_black.svg' alt='logo' />
                         </picture>
                     </a>
-                    <ul className={`m-0 p-0 bg-white md:bg-inherit absolute left-0 z-[-1] md:z-auto md:static list-none w-full flex items-center flex-col md:flex-row md:justify-between md:py-4 md:pl-[60px] transition-all duration-500 ease-in ${showMenu ? "top-16" : "top-[-225px]"} `}>
+                    <ul
+                        className={`m-0 p-0 bg-white md:bg-inherit absolute left-0 z-[-1] md:z-auto md:static list-none w-full flex items-center flex-col md:flex-row md:justify-between md:py-4 md:pl-[60px] transition-all duration-500 ease-in ${
+                            showMenu ? 'top-16' : 'top-[-225px]'
+                        } `}
+                    >
                         <div className='menu-item'>
                             <div>
                                 <li className='w-full flex relative text-left items-center justify-start no-underline px-4 py-4 md:mr-6 md:pb-3 lg:mr-9 xl:mr-[60px]'>
@@ -74,7 +78,7 @@ export default function Header() {
                         )}
                     </button>
                 </div>
-            </header >
+            </header>
         </>
     )
 }

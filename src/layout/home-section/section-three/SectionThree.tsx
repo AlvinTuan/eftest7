@@ -1,4 +1,4 @@
-import Button from "~/components/Button";
+import Button from '~/components/Button'
 
 export default function SectionThree() {
     return (
@@ -83,7 +83,11 @@ export default function SectionThree() {
                                             </p>
                                         </li>
                                     </ul>
-                                    <Button classBgTextColor="ct-btnColorOdd text-white" label="Take the quiz"></Button>
+                                    <Button
+                                        toLink=''
+                                        classBgTextColor='ct-btnColorOdd text-white'
+                                        label='Take the quiz'
+                                    ></Button>
                                 </div>
                             </div>
                         </div>
@@ -128,7 +132,11 @@ export default function SectionThree() {
                                             </p>
                                         </li>
                                     </ul>
-                                    <Button classBgTextColor="ct-btnColorEven text-white" label='Take the test'></Button>
+                                    <Button
+                                        toLink=''
+                                        classBgTextColor='ct-btnColorEven text-white'
+                                        label='Take the test'
+                                    ></Button>
                                 </div>
                             </div>
                         </div>

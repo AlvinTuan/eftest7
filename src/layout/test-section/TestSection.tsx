@@ -1,3 +1,5 @@
+import Button from '~/components/Button'
+
 export default function TestSection() {
     return (
         <div className='w-full flex relative items-center flex-col'>
@@ -74,14 +76,11 @@ export default function TestSection() {
                                                 </p>
                                             </li>
                                         </ul>
-                                        <div className='flex mt-8 items-center flex-col lg:flex-row'>
-                                            <a className='btn-start15' href='/quick-check/take-test/'>
-                                                <span className='ct-section5__title items-center'>
-                                                    Start 15 min test
-                                                </span>
-                                                <span className='touch-ripple-root' />
-                                            </a>
-                                        </div>
+                                        <Button
+                                            toLink='/quick-check/take-test/'
+                                            classBgTextColor='ct-btnColorOdd text-white'
+                                            label='Start 15 min test'
+                                        ></Button>
                                     </div>
                                 </div>
                             </div>

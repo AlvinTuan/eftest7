@@ -1,4 +1,4 @@
-import Button from "~/components/Button";
+import Button from '~/components/Button'
 
 export default function SectionOne() {
     return (
@@ -13,7 +13,11 @@ export default function SectionOne() {
                             Take the EF Standard English Test and get an accurate assessment of your English level from
                             home
                         </p>
-                        <Button classBgTextColor="bg-white text-primary" label="Test your English now"></Button>
+                        <Button
+                            toLink=''
+                            classBgTextColor='bg-white text-primary'
+                            label='Test your English now'
+                        ></Button>
                         {/* <a
                             href=''
                             className='flex items-center justify-center h-[56px] pt-3 pb-3 pl-6 pr-6 bg-white rounded-full lg:w-[205px] lg:h-12 shadow-btn transition-all'

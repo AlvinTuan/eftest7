@@ -1,4 +1,4 @@
-import Button from "~/components/Button";
+import Button from '~/components/Button'
 
 export default function SectionFour() {
     return (
@@ -23,7 +23,11 @@ export default function SectionFour() {
                             We have helped over 3,000 schools and organizations around the world define proficiency
                             benchmarks using our English level test.
                         </p>
-                        <Button classBgTextColor="ct-btnColorOdd text-white" label="English assessment solutions"></Button>
+                        <Button
+                            toLink=''
+                            classBgTextColor='ct-btnColorOdd text-white'
+                            label='English assessment solutions'
+                        ></Button>
                     </div>
                     <div className='hidden lg:flex lg:w-full lg:h-full'>
                         <img

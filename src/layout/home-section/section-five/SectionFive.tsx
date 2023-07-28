@@ -1,4 +1,4 @@
-import Button from "~/components/Button";
+import Button from '~/components/Button'
 
 export default function SectionFive() {
     return (
@@ -13,7 +13,11 @@ export default function SectionFive() {
                             Receive a free personalized online English certificate when you take the 50-minute English
                             test. You can easily add it to your CV or LinkedIn profile.
                         </p>
-                        <Button classBgTextColor="border-solid border-px border-[#ffffff66]" label="Certify your English level"></Button>
+                        <Button
+                            toLink=''
+                            classBgTextColor='border-solid border-px border-[#ffffff66]'
+                            label='Certify your English level'
+                        ></Button>
                     </div>
                     <div className='w-full h-full flex relative'>
                         <img
