@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom'
 import Button from '~/components/Button'
 
 export default function TakeTest() {
@@ -65,7 +64,11 @@ export default function TakeTest() {
                         </ul>
                     </div>
                     <div className='flex justify-end'>
-                        <Button toLink='/quick-check/take-test/survey1' classBgTextColor='ct-btnColorEven text-white' label='Start the test'></Button>
+                        <Button
+                            toLink='/quick-check/take-test/survey1'
+                            classBgTextColor='ct-btnColorEven text-white'
+                            label='Start the test'
+                        ></Button>
                     </div>
                 </div>
             </main>
