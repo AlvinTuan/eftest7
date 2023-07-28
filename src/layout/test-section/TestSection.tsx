@@ -34,7 +34,7 @@ export default function TestSection() {
                         <div className='text-white max-w-[515px] self-center text-center pb-10 md:px-0 md:pb-[72px]'>
                             <h1 className='md:text-5xl font-bold text-3xl'>Our short English quiz</h1>
                         </div>
-                        <div className='m-0 flex flex-col justify-center md:flex-row'>
+                        <div className='mx-auto flex flex-col justify-center md:flex-row'>
                             <div className='section-three__card md:max-w-[960px] md:flex-row'>
                                 <div className='flex items-center pb-6 text-secondary'>
                                     <h6 className='text-[64px] lg:text-[88px] mr-3 leading-tight'>15</h6>
