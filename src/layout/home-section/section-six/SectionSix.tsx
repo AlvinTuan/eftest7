@@ -46,7 +46,7 @@ export default function SectionSix() {
                     </div>
                     <hr className='divider-root w-px h-full h-[93px] mx-auto lg:hidden' />
                     <div className='w-full mx-auto flex flex-col lg:m-0 lg:mr-auto lg:flex-row'>
-                        <div className='flex'>
+                        <div className='flex justify-center'>
                             <div className='my-12 mx-24 flex flex-col md:my-60 md:mx-10 lg:m-0'>
                                 <span className='m-0 text-5xl font-bold flex self-center lg:self-auto xl:text-[80px]'>
                                     2500<span className='MuiTypography-root jss641 MuiTypography-body1'>+</span>
@@ -77,7 +77,7 @@ export default function SectionSix() {
                                 <hr className='divider-root lg:hidden' />
                             </div>
                         </div>
-                        <div className='flex'>
+                        <div className='flex justify-center'>
                             <Divider type='vertical' className='hidden lg:h-36 lg:my-0 lg:mx-[52px] lg:flex'></Divider>
                             <div className='my-12 mx-24 flex flex-col md:my-60 md:mx-10 lg:m-0'>
                                 <span className='m-0 text-5xl font-bold flex self-center lg:self-auto xl:text-[80px]'>
@@ -109,7 +109,7 @@ export default function SectionSix() {
                                 <hr className='divider-root lg:hidden' />
                             </div>
                         </div>
-                        <div className='flex'>
+                        <div className='flex justify-center'>
                             <Divider type='vertical' className='hidden lg:h-36 lg:my-0 lg:mx-[52px] lg:flex'></Divider>
                             <div className='my-12 mx-24 flex flex-col md:my-60 md:mx-10 lg:m-0'>
                                 <span className='m-0 text-5xl font-bold flex self-center lg:self-auto xl:text-[80px]'>

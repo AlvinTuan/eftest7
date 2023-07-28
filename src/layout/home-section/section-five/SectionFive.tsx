@@ -27,7 +27,7 @@ export default function SectionFive() {
                         />
                         <img
                             src='//a.storyblok.com/f/79503/468x467/2531d03856/certificate-image-desktop.svg'
-                            className='h-full w-full mx-auto md:w-1/2 md:hidden'
+                            className='mt-5 h-full w-full mx-auto md:w-1/2 md:hidden'
                             alt='mobileImage'
                         />
                     </div>

@@ -25,7 +25,7 @@ export default function SectionOne() {
                             <span className='font-medium text-primary'>Test your English now</span>
                         </a> */}
                     </div>
-                    <img src='/desktop-badge.svg' alt='' className='w-[405px] h-[420px]' />
+                    <img src='/desktop-badge.svg' alt='' className='w-[405px] h-[420px] mt-5 mx-auto' />
                 </div>
             </div>
         </div>
