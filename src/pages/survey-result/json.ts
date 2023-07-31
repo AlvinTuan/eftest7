@@ -1,7 +1,8 @@
 export const json = {
-    title: '15 minute test',
+    title: 'American History',
     showProgressBar: 'bottom',
     showTimerPanel: 'top',
+    maxTimeToFinishPage: 10,
     maxTimeToFinish: 25,
     firstPageIsStarted: true,
     startSurveyText: 'Start Quiz',
@@ -10,14 +11,13 @@ export const json = {
             elements: [
                 {
                     type: 'html',
-                    html: 'You are testing your english knowledge on <b>EFtest</b>.</br> Enter your name below and click <b>Start Quiz</b> to begin.'
+                    html: 'You are about to start a quiz on American history. <br>You will have 10 seconds for every question and 25 seconds to end the quiz.<br>Enter your name below and click <b>Start Quiz</b> to begin.'
                 },
                 {
                     type: 'text',
                     name: 'username',
                     titleLocation: 'hidden',
-                    isRequired: true,
-                    maxLength: 25
+                    isRequired: true
                 }
             ]
         },
@@ -28,8 +28,7 @@ export const json = {
                     name: 'civilwar',
                     title: 'When was the American Civil War?',
                     choices: ['1796-1803', '1810-1814', '1861-1865', '1939-1945'],
-                    correctAnswer: '1861-1865',
-                    enableIf: '{civilwar} empty'
+                    correctAnswer: '1861-1865'
                 }
             ]
         },
@@ -41,8 +40,7 @@ export const json = {
                     title: 'Whose quote is this: "Give me liberty, or give me death"?',
                     choicesOrder: 'random',
                     choices: ['John Hancock', 'James Madison', 'Patrick Henry', 'Samuel Adams'],
-                    correctAnswer: 'Patrick Henry',
-                    enableIf: '{libertyordeath} empty'
+                    correctAnswer: 'Patrick Henry'
                 }
             ]
         },
@@ -59,8 +57,7 @@ export const json = {
                         'The French Declaration of the Rights of Man',
                         'The charter signed by the Pilgrims on the Mayflower'
                     ],
-                    correctAnswer: 'The foundation of the British parliamentary system',
-                    enableIf: '{magnacarta} empty'
+                    correctAnswer: 'The foundation of the British parliamentary system'
                 }
             ]
         }

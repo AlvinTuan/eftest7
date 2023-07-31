@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unsafe-argument */
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
 /* eslint-disable @typescript-eslint/restrict-plus-operands */
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
@@ -7,13 +8,16 @@ import 'survey-core/defaultV2.min.css'
 import './survey.scss'
 import { json } from './json'
 import { themeJson } from './theme'
+import { useAppDispatch } from '~/redux/hooks'
+import { setServeyForm } from '~/redux/surveyForm/surveyFormSlice'
 
 function SurveyComponent() {
+    const dispatch = useAppDispatch()
     const survey = new Model(json)
     // You can delete the line below if you do not use a customized theme
     survey.applyTheme(themeJson)
     survey.onComplete.add((sender) => {
-        console.log(JSON.stringify(sender.data, null, 3))
+        dispatch(setServeyForm(sender.data))
     })
     const correctStr = 'Correct'
     const incorrectStr = 'Incorrect'
