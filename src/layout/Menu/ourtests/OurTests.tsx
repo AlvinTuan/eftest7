@@ -17,7 +17,7 @@ const items: MenuProps['items'] = [
         key: '2',
         label: (
             <a target='_blank' rel='noopener noreferrer' href='https://www.aliyun.com'>
-                2nd menu item
+                EF Set 50(50-min)
             </a>
         )
     },
@@ -25,7 +25,7 @@ const items: MenuProps['items'] = [
         key: '3',
         label: (
             <a target='_blank' rel='noopener noreferrer' href='https://www.luohanacademy.com'>
-                3rd menu item
+                Assessment Solutions
             </a>
         )
     }

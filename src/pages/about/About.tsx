@@ -2,12 +2,10 @@ import Button from '~/components/Button'
 import CardAbout from '~/components/CardAbout'
 import CardTest from '~/components/CardTest/CardTest'
 import { criteriaOfEFset, criteriaOfQuickCheck } from '~/components/CardTest/Criteria'
-import Header from '~/layout/header'
 
 export default function About() {
     return (
         <>
-            <Header></Header>
             <div className='wrapper'>
                 <div className='w-full relative bgColorGreen'>
                     <div>
@@ -137,7 +135,9 @@ export default function About() {
                 <div className='particle-section-about'>
                     <div className='section-about'>
                         <div className='w-full flex relative pt-14 px-6 flex-col pb-[111.6px] md:pt-12'>
-                            <h4 className='text-2xl font-bold pb-3 md:text-3xl md:self-center md:pb-12'>Test your  English now</h4>
+                            <h4 className='text-2xl font-bold pb-3 md:text-3xl md:self-center md:pb-12'>
+                                Test your English now
+                            </h4>
                             <div className='mx-auto flex flex-col md:gap-x-6 md:flex-row'>
                                 <CardTest
                                     minitues={50}
@@ -157,7 +157,6 @@ export default function About() {
                                     textColor='text-secondary'
                                     btnColor='ct-btnColorOdd'
                                 ></CardTest>
-
                             </div>
                         </div>
                     </div>
