@@ -48,11 +48,12 @@
     .section-four,
     .section-five,
     .section-six,
-    .reason-section {
+    .reason-section,
+    .particle-section-about {
         @apply w-full relative;
     }
     .section-one,
-    .section-three {
+    .bgColorGreen {
         background: linear-gradient(to top, #52e8a0 0%, #1acce5 100%);
     }
     .section-five {
@@ -119,6 +120,9 @@
     .ct-btnColorEven {
         background: linear-gradient(rgb(16, 183, 221), rgb(16, 169, 204));
     }
+    .ct-btnAboutEF {
+        background: linear-gradient(to top, rgb(0, 18, 255) -100%, rgb(5, 230, 238) 100%);
+    }
     .ct-btnSection {
         @apply px-6 text-white h-14 md:h-12 text-base md:text-sm cursor-pointer font-semibold flex items-center rounded-full shadow-btn;
     }
@@ -179,7 +183,8 @@
         );
     }
     .btn-start15,
-    .btn__start-TakeTest {
+    .btn__start-TakeTest,
+    .btn__aboutEF {
         min-width: 64px;
         font-weight: 500;
         line-height: 1.75;
@@ -208,7 +213,8 @@
     }
     @media screen and (min-width: 768px) {
         .btn-start15,
-        .btn__start-TakeTest {
+        .btn__start-TakeTest,
+        .btn__aboutEF {
             height: 48px;
             font-size: 14px;
             width: auto;
@@ -225,5 +231,16 @@
         .btn__start-TakeTest {
             width: auto;
         }
+    }
+    .wrapper {
+        @apply w-full flex relative items-center flex-col;
+    }
+    .section-about {
+        @apply w-full relative md:mx-auto md:flex md:max-w-[960px] lg:max-w-[1200px];
+    }
+    .ct-paper {
+        color: rgba(0, 0, 0, 0.87);
+        transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+        background-color: #fff;
     }
 }

@@ -1,8 +1,9 @@
-import Button from '~/components/Button'
+import CardTest from '~/components/CardTest/CardTest'
+import { criteriaOfEFset, criteriaOfQuickCheck } from '~/components/CardTest/Criteria'
 
 export default function SectionThree() {
     return (
-        <div className='section-three'>
+        <div className='section-three bgColorGreen'>
             <img
                 src='//a.storyblok.com/f/71234/254x508/6219a4e55b/s3-desktop-right.svg'
                 alt='rightBadge'
@@ -43,103 +44,25 @@ export default function SectionThree() {
                     <div className='z-10 pb-10 pl-12 pr-10 text-center text-white md:pl-0 md:pr-0 md:pb-[72px]'>
                         <h2 className='text-[32px] leading-9 font-bold'>Test your English now</h2>
                     </div>
-                    <div className='flex flex-col justify-center m-0 min-[600px]:mx-auto md:flex-row'>
-                        <div className='section-three__card '>
-                            <div className='flex items-center pb-6 text-[#45dd97]'>
-                                <h6 className='mr-3 text-5xl font-bold lg:text-[88px]'>15</h6>
-                                <div>
-                                    <p className='max-w-[760px] text-base font-normal'>
-                                        <span>
-                                            <b>MIN</b>
-                                        </span>
-                                    </p>
-                                    <h3 className='text-3xl font-bold'>
-                                        <span>
-                                            <b>QUICK CHECK</b>
-                                        </span>
-                                    </h3>
-                                </div>
-                            </div>
-                            <hr className='ct-line' />
-                            <div className='flex md:h-full md:pl-0'>
-                                <div className='flex flex-col justify-between h-full'>
-                                    <h5 className='pb-4 -mr-2 text-xl font-bold pt-9'>Check your English level</h5>
-                                    <ul className='ml-4 text-base list-disc'>
-                                        <li className='text-sm md:text-base'>
-                                            <p className='ct-p'>
-                                                <span>No fees. No sign up. Start now </span>
-                                            </p>
-                                        </li>
-                                        <li className='text-sm md:text-base'>
-                                            <a className='hover:text-focus_hover'>
-                                                <p className='ct-p'>
-                                                    <span>Beginner, intermediate, and advanced</span>
-                                                </p>
-                                            </a>
-                                        </li>
-                                        <li className='text-sm md:text-base'>
-                                            <p className='ct-p'>
-                                                <span>Share your score on social media </span>
-                                            </p>
-                                        </li>
-                                    </ul>
-                                    <Button
-                                        toLink=''
-                                        classBgTextColor='ct-btnColorOdd text-white'
-                                        label='Take the quiz'
-                                    ></Button>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='section-three__card md:ml-6'>
-                            <div className='flex items-center pb-6 text-[#10B7DD]'>
-                                <h6 className='mr-3 text-5xl font-bold lg:text-[88px]'>50</h6>
-                                <div>
-                                    <p className='max-w-[760px] text-base font-normal'>
-                                        <span>
-                                            <b>MIN</b>
-                                        </span>
-                                    </p>
-                                    <h3 className='text-3xl font-bold'>
-                                        <span>
-                                            <b>EF SET</b>
-                                        </span>
-                                    </h3>
-                                </div>
-                            </div>
-                            <hr className='ct-line' />
-                            <div className='flex md:h-full md:pl-0'>
-                                <div className='flex flex-col justify-between h-full'>
-                                    <h5 className='pb-4 -mr-2 text-xl font-bold pt-9'>
-                                        Certify your English proficiency
-                                    </h5>
-                                    <ul className='ml-4 text-base list-disc'>
-                                        <li className='text-sm md:text-base'>
-                                            <p className='ct-p'>
-                                                <span>Get a personalized EF SET Certificate </span>
-                                            </p>
-                                        </li>
-                                        <li className='text-sm md:text-base'>
-                                            <a className='hover:text-focus_hover'>
-                                                <p className='ct-p'>
-                                                    <span>Results fully aligned with CEFR levels</span>
-                                                </p>
-                                            </a>
-                                        </li>
-                                        <li className='text-sm md:text-base'>
-                                            <p className='ct-p'>
-                                                <span>Free </span>
-                                            </p>
-                                        </li>
-                                    </ul>
-                                    <Button
-                                        toLink=''
-                                        classBgTextColor='ct-btnColorEven text-white'
-                                        label='Take the test'
-                                    ></Button>
-                                </div>
-                            </div>
-                        </div>
+                    <div className='flex flex-col justify-center m-0 min-[600px]:mx-auto md:flex-row md:gap-x-6'>
+                        <CardTest
+                            minitues={15}
+                            typeTest='Quick Check'
+                            title='Check your English level'
+                            criteriaList={criteriaOfQuickCheck}
+                            labelBtn='Take the quiz'
+                            textColor='text-secondary'
+                            btnColor='ct-btnColorOdd'
+                        ></CardTest>
+                        <CardTest
+                            minitues={50}
+                            typeTest='EF SET'
+                            title='Certify your English proficiency'
+                            criteriaList={criteriaOfEFset}
+                            labelBtn='Take the test'
+                            textColor='text-tertiary'
+                            btnColor='ct-btnColorEven'
+                        ></CardTest>
                     </div>
                 </div>
             </div>

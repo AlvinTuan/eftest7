@@ -7,7 +7,7 @@ import SectionSix from '../../home-section/section-six'
 
 const Content = () => {
     return (
-        <main className='w-full flex relative items-center flex-col'>
+        <main className='wrapper'>
             <SectionOne></SectionOne>
             <SectionTwo></SectionTwo>
             <SectionThree></SectionThree>

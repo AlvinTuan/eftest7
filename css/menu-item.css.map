@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "sources": [
+        "../src/layout/Menu/menu-item.scss",
+        "menu-item.css"
+    ],
+    "names": [],
+    "mappings": "AAAA;EACI,kBAAA;ACCJ;ADAI;EACI,eAAA;ACER;ADDQ;EACI,uBAAA;ACGZ",
+    "file": "menu-item.css"
+}

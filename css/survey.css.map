@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "sources": [
+        "../src/pages/survey/survey.scss",
+        "survey.css"
+    ],
+    "names": [],
+    "mappings": "AAAA;EACI,YAAA;ACCJ;;ADCA;EACI,UAAA;ACEJ;;ADAA;EACI,UAAA;ACGJ",
+    "file": "survey.css"
+}

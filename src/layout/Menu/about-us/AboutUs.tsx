@@ -1,14 +1,11 @@
 import type { MenuProps } from 'antd'
 import { Dropdown } from 'antd'
+import { Link } from 'react-router-dom'
 
 const items: MenuProps['items'] = [
     {
         key: '1',
-        label: (
-            <a target='_blank' rel='noopener noreferrer' href='https://www.antgroup.com'>
-                About the test
-            </a>
-        )
+        label: <Link to={'/about'}>About the test</Link>
     },
     {
         key: '2',
