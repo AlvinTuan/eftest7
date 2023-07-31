@@ -3,6 +3,7 @@ import HomePage from './pages/homepage'
 import QuickCheck from './pages/quick-check'
 import TakeTest from './pages/take-test'
 import SurveyComponent from './pages/survey'
+import SurveyResults from './pages/survey-results'
 
 const App = () => {
     return (
@@ -11,6 +12,7 @@ const App = () => {
             <Route path='/quick-check' element={<QuickCheck />}></Route>
             <Route path='/quick-check/take-test' element={<TakeTest></TakeTest>}></Route>
             <Route path='/quick-check/take-test/survey1' element={<SurveyComponent></SurveyComponent>}></Route>
+            <Route path='/quick-check/take-test/survey1/results' element={<SurveyResults></SurveyResults>}></Route>
         </Routes>
     )
 }

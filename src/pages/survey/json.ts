@@ -1,176 +1,79 @@
 export const json = {
-    title: 'Product/Market Fit Survey Template',
+    title: '15 minute test',
+    showProgressBar: 'bottom',
+    showTimerPanel: 'top',
+    maxTimeToFinish: 900,
+    firstPageIsStarted: true,
+    startSurveyText: 'Start Quiz',
     pages: [
         {
-            name: 'page1',
+            elements: [
+                {
+                    type: 'html',
+                    html: 'you are testing your english knowledge on <b>EFtest</b>.</br> Enter your name below and click <b>Start Quiz</b> to begin.'
+                },
+                {
+                    type: 'text',
+                    name: 'username',
+                    titleLocation: 'hidden',
+                    isRequired: true,
+                    maxLength: 25
+                }
+            ]
+        },
+        {
             elements: [
                 {
                     type: 'radiogroup',
-                    name: 'customer_role',
-                    title: 'What best describes your role?',
-                    showOtherItem: true,
+                    name: 'civilwar',
+                    title: 'When was the American Civil War?',
+                    choices: ['1796-1803', '1810-1814', '1861-1865', '1939-1945'],
+                    correctAnswer: '1861-1865',
+                    enableIf: '{civilwar} empty'
+                }
+            ]
+        },
+        {
+            elements: [
+                {
+                    type: 'radiogroup',
+                    name: 'libertyordeath',
+                    title: 'Whose quote is this: "Give me liberty, or give me death"?',
+                    choicesOrder: 'random',
+                    choices: ['John Hancock', 'James Madison', 'Patrick Henry', 'Samuel Adams'],
+                    correctAnswer: 'Patrick Henry',
+                    enableIf: '{libertyordeath} empty'
+                }
+            ]
+        },
+        {
+            elements: [
+                {
+                    type: 'radiogroup',
+                    name: 'magnacarta',
+                    title: 'What is Magna Carta?',
+                    choicesOrder: 'random',
                     choices: [
-                        'Engineering Lead',
-                        'Project Manager',
-                        'Software Developer',
-                        'Designer',
-                        'Product Manager',
-                        'CEO / Founder',
-                        'Customer Support'
+                        'The foundation of the British parliamentary system',
+                        'The Great Seal of the monarchs of England',
+                        'The French Declaration of the Rights of Man',
+                        'The charter signed by the Pilgrims on the Mayflower'
                     ],
-                    otherText: 'Other',
-                    colCount: 3
-                },
-                {
-                    type: 'radiogroup',
-                    name: 'start_using',
-                    title: 'How did you start using the product?',
-                    choices: [
-                        {
-                            value: 'created',
-                            text: 'I created my account'
-                        },
-                        {
-                            value: 'invited',
-                            text: 'I was invited to an account'
-                        }
-                    ]
-                },
-                {
-                    type: 'radiogroup',
-                    name: 'product_discovering',
-                    title: 'How did you first discover the product? ',
-                    showOtherItem: true,
-                    choices: ['Friend or colleague', 'Search engine', 'Facebook', 'Twitter', 'Blog'],
-                    otherText: 'Other',
-                    colCount: 3
-                },
-                {
-                    type: 'radiogroup',
-                    name: 'paid_customer',
-                    title: 'Do you currently pay for the product? ',
-                    isRequired: true,
-                    choices: ['Yes', 'No']
+                    correctAnswer: 'The foundation of the British parliamentary system',
+                    enableIf: '{magnacarta} empty'
                 }
             ]
+        }
+    ],
+    completedHtml: '<h4>You got <b>{correctAnswers}</b> out of <b>{questionCount}</b> correct answers.</h4>',
+    completedHtmlOnCondition: [
+        {
+            expression: '{correctAnswers} == 0',
+            html: '<h4>Unfortunately, none of your answers is correct. Please try again.</h4>'
         },
         {
-            name: 'page2',
-            elements: [
-                {
-                    type: 'radiogroup',
-                    name: 'product_fit',
-                    title: 'How would you feel if you could no longer use the product?',
-                    isRequired: true,
-                    choices: [
-                        {
-                            value: '3',
-                            text: 'Very disappointed'
-                        },
-                        {
-                            value: '2',
-                            text: 'Somewhat disappointed'
-                        },
-                        {
-                            value: '1',
-                            text: 'Not disappointed'
-                        }
-                    ]
-                },
-                {
-                    type: 'comment',
-                    name: 'product_fit_comment',
-                    visibleIf: '{product_fit} notempty',
-                    title: 'Please help us understand why you selected the answer above'
-                }
-            ]
-        },
-        {
-            name: 'page3',
-            elements: [
-                {
-                    type: 'radiogroup',
-                    name: 'product_alternative',
-                    title: 'What would you use as an alternative if [the product] were no\nlonger available?',
-                    showOtherItem: true,
-                    choices: [
-                        'Alternative 1',
-                        'Alternative 2',
-                        'Alternative 3',
-                        'Alternative 4',
-                        'Alternative 5',
-                        'Alternative 6'
-                    ],
-                    otherText: 'Other (please name)',
-                    colCount: 3
-                },
-                {
-                    type: 'radiogroup',
-                    name: 'product_benefit',
-                    title: 'What is the primary benefit that you have received from the\nproduct?',
-                    showOtherItem: true,
-                    choices: ['Benefit 1', 'Benefit 2', 'Benefit 3', 'Benefit 4', 'Benefit 5', 'Benefit 6'],
-                    colCount: 3
-                },
-                {
-                    type: 'radiogroup',
-                    name: 'product_recommend',
-                    title: 'Have you recommended the product to anyone?',
-                    choices: ['Yes', 'No']
-                }
-            ]
-        },
-        {
-            name: 'page4',
-            elements: [
-                {
-                    type: 'rating',
-                    name: 'nps_score',
-                    title: 'How likely are you to recommend the product to a friend or\ncolleague? ',
-                    isRequired: true,
-                    rateMin: 0,
-                    rateMax: 10,
-                    minRateDescription: 'Most unlikely',
-                    maxRateDescription: 'Most likely'
-                },
-                {
-                    type: 'radiogroup',
-                    name: 'favorite_functionality',
-                    title: "What's your favorite functionality / add-on for the product?",
-                    showOtherItem: true,
-                    choices: ['Feature 1', 'Feature 2', 'Feature 3', 'Feature 4', 'Feature 5', 'Feature 6'],
-                    colCount: 3
-                },
-                {
-                    type: 'comment',
-                    name: 'product_improvement',
-                    title: 'How could the product be improved to better meet your\nneeds?'
-                }
-            ]
-        },
-        {
-            name: 'page5',
-            elements: [
-                {
-                    type: 'multipletext',
-                    name: 'contact_customer',
-                    title: 'Want us to follow-up? Leave your name and email here:',
-                    items: [
-                        {
-                            name: 'Name'
-                        },
-                        {
-                            name: 'E-mail',
-                            inputType: 'email',
-                            validators: [
-                                {
-                                    type: 'email'
-                                }
-                            ]
-                        }
-                    ]
-                }
-            ]
+            expression: '{correctAnswers} == {questionCount}',
+            html: '<h4>Congratulations! You answered all the questions correctly!</h4>'
         }
     ]
 }
