@@ -80,8 +80,8 @@ export default function Header() {
                     </button>
                     <div
                         className={classNames('fixed inset-0 bg-black bg-opacity-10 transition-all ease-out duration-300 z-[-2]', {
-                            'bg-opacity-10': showMenu,
-                            'bg-opacity-0': !showMenu
+                            'bg-opacity-10 block': showMenu,
+                            'bg-opacity-0 hidden': !showMenu
                         })}
                         onClick={() => setShowMenu(false)}
                     ></div>
