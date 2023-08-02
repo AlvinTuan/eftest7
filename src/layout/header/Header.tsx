@@ -4,6 +4,7 @@ import Cefr from '~/layout/Menu/cefr'
 import OurTests from '~/layout/Menu/ourtests'
 import Certification from '../Menu/certification'
 import { Link } from 'react-router-dom'
+import classNames from 'classnames'
 
 export default function Header() {
     const [showMenu, setShowMenu] = useState(false)
@@ -17,9 +18,8 @@ export default function Header() {
                         </picture>
                     </Link>
                     <ul
-                        className={`m-0 p-0 bg-white md:bg-inherit absolute left-0 z-[-1] md:z-auto md:static list-none w-full flex items-center flex-col md:flex-row md:justify-between md:py-4 md:pl-[60px] transition-all duration-500 ease-in ${
-                            showMenu ? 'top-16' : 'top-[-225px]'
-                        } `}
+                        className={`m-0 p-0 bg-white md:bg-inherit absolute left-0 z-[-1] md:z-auto md:static list-none w-full flex items-center flex-col md:flex-row md:justify-between md:py-4 md:pl-[60px] transition-all duration-500 ease-in ${showMenu ? 'top-16' : 'top-[-225px]'
+                            } `}
                     >
                         <div className='menu-item'>
                             <div>
@@ -78,6 +78,13 @@ export default function Header() {
                             </svg>
                         )}
                     </button>
+                    <div
+                        className={classNames('fixed inset-0 bg-black bg-opacity-10 transition-all ease-out duration-300 z-[-2]', {
+                            'bg-opacity-10': showMenu,
+                            'bg-opacity-0': !showMenu
+                        })}
+                        onClick={() => setShowMenu(false)}
+                    ></div>
                 </div>
             </header>
         </>
